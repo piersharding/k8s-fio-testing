@@ -1,0 +1,41 @@
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: (g=0): rw=rw, bs=64K-64K/64K-64K/64K-64K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 8 processes
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: Laying out IO file(s) (4 file(s) / 4096MB)
+
+fio-beegfs-read-buffered-block_64k-size_1G-threads_8: (groupid=0, jobs=8): err= 0: pid=13342: Mon Nov 19 18:49:51 2018
+  read : io=705631MB, bw=2939.1MB/s, iops=47039, runt=240015msec
+    clat (usec): min=5, max=82020, avg=169.10, stdev=475.65
+     lat (usec): min=5, max=82020, avg=169.18, stdev=475.67
+    clat percentiles (usec):
+     |  1.00th=[    5],  5.00th=[    5], 10.00th=[    5], 20.00th=[    5],
+     | 30.00th=[    6], 40.00th=[    6], 50.00th=[    6], 60.00th=[    7],
+     | 70.00th=[    7], 80.00th=[   12], 90.00th=[ 1112], 95.00th=[ 1288],
+     | 99.00th=[ 1720], 99.50th=[ 1864], 99.90th=[ 2224], 99.95th=[ 2448],
+     | 99.99th=[ 7712]
+    bw (KB  /s): min=283008, max=413952, per=12.51%, avg=376660.94, stdev=10323.89
+    lat (usec) : 10=77.53%, 20=8.63%, 50=1.30%, 100=0.02%, 250=0.01%
+    lat (usec) : 500=0.01%, 750=0.04%, 1000=0.76%
+    lat (msec) : 2=11.46%, 4=0.22%, 10=0.02%, 20=0.01%, 50=0.01%
+    lat (msec) : 100=0.01%
+  cpu          : usr=0.76%, sys=49.56%, ctx=24240964, majf=0, minf=174633
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=11290094/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=705631MB, aggrb=2939.1MB/s, minb=2939.1MB/s, maxb=2939.1MB/s, mint=240015msec, maxt=240015msec
+
+CPU idleness:
+  system: 91.46%
+  unit work: mean=55.94us, stddev=1.94

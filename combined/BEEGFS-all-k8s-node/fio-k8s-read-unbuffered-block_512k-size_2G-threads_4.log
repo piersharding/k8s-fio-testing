@@ -1,0 +1,35 @@
+fio-beegfs-read-unbuffered-block_512k-size_2G-threads_4: (g=0): rw=rw, bs=512K-512K/512K-512K/512K-512K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 4 processes
+fio-beegfs-read-unbuffered-block_512k-size_2G-threads_4: Laying out IO file(s) (4 file(s) / 8192MB)
+fio-beegfs-read-unbuffered-block_512k-size_2G-threads_4: Laying out IO file(s) (4 file(s) / 8192MB)
+fio-beegfs-read-unbuffered-block_512k-size_2G-threads_4: Laying out IO file(s) (4 file(s) / 8192MB)
+fio-beegfs-read-unbuffered-block_512k-size_2G-threads_4: Laying out IO file(s) (4 file(s) / 8192MB)
+
+fio-beegfs-read-unbuffered-block_512k-size_2G-threads_4: (groupid=0, jobs=4): err= 0: pid=11101: Fri Nov 23 22:14:52 2018
+  read : io=114625MB, bw=489061KB/s, iops=955, runt=240003msec
+    clat (usec): min=1602, max=53232, avg=4185.53, stdev=825.58
+     lat (usec): min=1602, max=53232, avg=4185.68, stdev=825.58
+    clat percentiles (usec):
+     |  1.00th=[ 3280],  5.00th=[ 3888], 10.00th=[ 3920], 20.00th=[ 3952],
+     | 30.00th=[ 3952], 40.00th=[ 3984], 50.00th=[ 3984], 60.00th=[ 4048],
+     | 70.00th=[ 4256], 80.00th=[ 4256], 90.00th=[ 4320], 95.00th=[ 4576],
+     | 99.00th=[ 7968], 99.50th=[ 9536], 99.90th=[12736], 99.95th=[14272],
+     | 99.99th=[27776]
+    bw (KB  /s): min=95681, max=134629, per=25.02%, avg=122387.02, stdev=4599.09
+    lat (msec) : 2=0.01%, 4=50.55%, 10=49.04%, 20=0.39%, 50=0.02%
+    lat (msec) : 100=0.01%
+  cpu          : usr=0.07%, sys=8.03%, ctx=465496, majf=0, minf=4082
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=229250/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=114625MB, aggrb=489060KB/s, minb=489060KB/s, maxb=489060KB/s, mint=240003msec, maxt=240003msec
+
+CPU idleness:
+  system: 98.13%
+  unit work: mean=55.25us, stddev=2.14

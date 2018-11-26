@@ -1,0 +1,35 @@
+fio-beegfs-read-unbuffered-block_64k-size_1G-threads_4: (g=0): rw=rw, bs=64K-64K/64K-64K/64K-64K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 4 processes
+fio-beegfs-read-unbuffered-block_64k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-unbuffered-block_64k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-unbuffered-block_64k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-unbuffered-block_64k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+
+fio-beegfs-read-unbuffered-block_64k-size_1G-threads_4: (groupid=0, jobs=4): err= 0: pid=9118: Fri Nov 23 18:37:11 2018
+  read : io=84064MB, bw=358673KB/s, iops=5604, runt=240001msec
+    clat (usec): min=398, max=45385, avg=711.98, stdev=289.96
+     lat (usec): min=398, max=45385, avg=712.10, stdev=289.96
+    clat percentiles (usec):
+     |  1.00th=[  516],  5.00th=[  564], 10.00th=[  588], 20.00th=[  620],
+     | 30.00th=[  644], 40.00th=[  660], 50.00th=[  684], 60.00th=[  700],
+     | 70.00th=[  724], 80.00th=[  764], 90.00th=[  836], 95.00th=[  884],
+     | 99.00th=[ 1080], 99.50th=[ 2256], 99.90th=[ 3408], 99.95th=[ 3856],
+     | 99.99th=[10944]
+    bw (KB  /s): min=64128, max=95872, per=25.02%, avg=89736.41, stdev=3603.88
+    lat (usec) : 500=0.50%, 750=76.31%, 1000=21.88%
+    lat (msec) : 2=0.76%, 4=0.51%, 10=0.03%, 20=0.01%, 50=0.01%
+  cpu          : usr=0.42%, sys=8.68%, ctx=1663989, majf=0, minf=29048
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=1345029/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=84064MB, aggrb=358672KB/s, minb=358672KB/s, maxb=358672KB/s, mint=240001msec, maxt=240001msec
+
+CPU idleness:
+  system: 98.72%
+  unit work: mean=55.71us, stddev=2.10

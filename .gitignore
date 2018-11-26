@@ -1,0 +1,9 @@
+test*
+.ipynb_checkpoints
+/BEEGFS*
+beegfs-baseline.csv.buffered.only
+beegfs-baseline.csv.save
+beegfs-total.csv
+fio-parser/
+temp-plot.html
+

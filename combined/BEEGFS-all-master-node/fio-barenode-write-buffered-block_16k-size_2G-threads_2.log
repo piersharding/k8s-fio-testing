@@ -1,0 +1,35 @@
+fio-beegfs-write-buffered-block_16k-size_2G-threads_2: (g=0): rw=rw, bs=16K-16K/16K-16K/16K-16K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 2 processes
+fio-beegfs-write-buffered-block_16k-size_2G-threads_2: Laying out IO file(s) (4 file(s) / 8192MB)
+fio-beegfs-write-buffered-block_16k-size_2G-threads_2: Laying out IO file(s) (4 file(s) / 8192MB)
+
+fio-beegfs-write-buffered-block_16k-size_2G-threads_2: (groupid=0, jobs=2): err= 0: pid=3388601: Fri Nov  9 00:58:39 2018
+  write: io=81664MB, bw=348356KB/s, iops=21772, runt=240053msec
+    clat (usec): min=1, max=705563, avg=90.94, stdev=5530.50
+     lat (usec): min=1, max=705564, avg=91.17, stdev=5530.51
+    clat percentiles (usec):
+     |  1.00th=[    1],  5.00th=[    1], 10.00th=[    2], 20.00th=[    2],
+     | 30.00th=[    2], 40.00th=[    2], 50.00th=[    2], 60.00th=[    5],
+     | 70.00th=[    5], 80.00th=[    5], 90.00th=[    5], 95.00th=[    6],
+     | 99.00th=[  660], 99.50th=[  692], 99.90th=[  788], 99.95th=[  860],
+     | 99.99th=[444416]
+    bw (KB  /s): min=   61, max=716864, per=55.32%, avg=192716.82, stdev=254501.80
+    lat (usec) : 2=5.99%, 4=45.79%, 10=43.67%, 20=0.99%, 50=0.40%
+    lat (usec) : 100=0.03%, 250=0.01%, 500=0.03%, 750=2.94%, 1000=0.12%
+    lat (msec) : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%
+    lat (msec) : 100=0.01%, 250=0.01%, 500=0.01%, 750=0.01%
+  cpu          : usr=1.28%, sys=11.76%, ctx=685155, majf=0, minf=71832
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=5226491/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: io=81664MB, aggrb=348355KB/s, minb=348355KB/s, maxb=348355KB/s, mint=240053msec, maxt=240053msec
+
+CPU idleness:
+  system: 90.25%
+  unit work: mean=50.69us, stddev=5.49

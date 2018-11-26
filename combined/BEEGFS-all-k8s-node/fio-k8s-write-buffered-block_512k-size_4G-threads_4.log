@@ -1,0 +1,36 @@
+fio-beegfs-write-buffered-block_512k-size_4G-threads_4: (g=0): rw=rw, bs=512K-512K/512K-512K/512K-512K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 4 processes
+fio-beegfs-write-buffered-block_512k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+fio-beegfs-write-buffered-block_512k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+fio-beegfs-write-buffered-block_512k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+fio-beegfs-write-buffered-block_512k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+
+fio-beegfs-write-buffered-block_512k-size_4G-threads_4: (groupid=0, jobs=4): err= 0: pid=12619: Mon Nov 19 16:40:07 2018
+  write: io=110959MB, bw=472682KB/s, iops=923, runt=240376msec
+    clat (usec): min=433, max=613378, avg=4321.10, stdev=39117.17
+     lat (usec): min=441, max=613386, avg=4330.36, stdev=39117.16
+    clat percentiles (usec):
+     |  1.00th=[  540],  5.00th=[  588], 10.00th=[  620], 20.00th=[  652],
+     | 30.00th=[  684], 40.00th=[  708], 50.00th=[  724], 60.00th=[  748],
+     | 70.00th=[  764], 80.00th=[  788], 90.00th=[  828], 95.00th=[  884],
+     | 99.00th=[23168], 99.50th=[448512], 99.90th=[489472], 99.95th=[497664],
+     | 99.99th=[518144]
+    bw (KB  /s): min=  973, max=698368, per=25.92%, avg=122542.51, stdev=171607.34
+    lat (usec) : 500=0.20%, 750=61.20%, 1000=35.54%
+    lat (msec) : 2=1.31%, 4=0.02%, 10=0.02%, 20=0.48%, 50=0.44%
+    lat (msec) : 100=0.01%, 250=0.04%, 500=0.69%, 750=0.05%
+  cpu          : usr=0.35%, sys=5.62%, ctx=1169792, majf=0, minf=4043
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=221917/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: io=110959MB, aggrb=472682KB/s, minb=472682KB/s, maxb=472682KB/s, mint=240376msec, maxt=240376msec
+
+CPU idleness:
+  system: 98.81%
+  unit work: mean=55.59us, stddev=1.74

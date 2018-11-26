@@ -1,0 +1,35 @@
+fio-beegfs-write-buffered-block_16k-size_1G-threads_2: (g=0): rw=rw, bs=16K-16K/16K-16K/16K-16K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 2 processes
+fio-beegfs-write-buffered-block_16k-size_1G-threads_2: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-write-buffered-block_16k-size_1G-threads_2: Laying out IO file(s) (4 file(s) / 4096MB)
+
+fio-beegfs-write-buffered-block_16k-size_1G-threads_2: (groupid=0, jobs=2): err= 0: pid=4738: Mon Nov 19 00:12:45 2018
+  write: io=179144MB, bw=764344KB/s, iops=47771, runt=240001msec
+    clat (usec): min=1, max=731688, avg=40.96, stdev=2743.82
+     lat (usec): min=1, max=731689, avg=41.18, stdev=2743.83
+    clat percentiles (usec):
+     |  1.00th=[    1],  5.00th=[    1], 10.00th=[    2], 20.00th=[    2],
+     | 30.00th=[    2], 40.00th=[    2], 50.00th=[    2], 60.00th=[    4],
+     | 70.00th=[    5], 80.00th=[    5], 90.00th=[    5], 95.00th=[    6],
+     | 99.00th=[  668], 99.50th=[  700], 99.90th=[  772], 99.95th=[  836],
+     | 99.99th=[ 1012]
+    bw (KB  /s): min=   61, max=704576, per=52.94%, avg=404668.38, stdev=272681.64
+    lat (usec) : 2=7.21%, 4=49.53%, 10=38.81%, 20=0.79%, 50=0.50%
+    lat (usec) : 100=0.04%, 250=0.01%, 500=0.03%, 750=2.94%, 1000=0.14%
+    lat (msec) : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%
+    lat (msec) : 100=0.01%, 250=0.01%, 500=0.01%, 750=0.01%
+  cpu          : usr=2.70%, sys=24.94%, ctx=1508765, majf=0, minf=144947
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=11465212/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: io=179144MB, aggrb=764344KB/s, minb=764344KB/s, maxb=764344KB/s, mint=240001msec, maxt=240001msec
+
+CPU idleness:
+  system: 98.07%
+  unit work: mean=55.47us, stddev=1.68

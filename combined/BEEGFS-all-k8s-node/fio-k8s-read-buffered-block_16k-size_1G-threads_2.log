@@ -1,0 +1,34 @@
+fio-beegfs-read-buffered-block_16k-size_1G-threads_2: (g=0): rw=rw, bs=16K-16K/16K-16K/16K-16K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 2 processes
+fio-beegfs-read-buffered-block_16k-size_1G-threads_2: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-buffered-block_16k-size_1G-threads_2: Laying out IO file(s) (4 file(s) / 4096MB)
+
+fio-beegfs-read-buffered-block_16k-size_1G-threads_2: (groupid=0, jobs=2): err= 0: pid=4599: Mon Nov 19 00:04:21 2018
+  read : io=355004MB, bw=1479.2MB/s, iops=94667, runt=240001msec
+    clat (usec): min=1, max=10815, avg=20.43, stdev=102.06
+     lat (usec): min=1, max=10815, avg=20.49, stdev=102.07
+    clat percentiles (usec):
+     |  1.00th=[    1],  5.00th=[    1], 10.00th=[    1], 20.00th=[    2],
+     | 30.00th=[    2], 40.00th=[    2], 50.00th=[    2], 60.00th=[    2],
+     | 70.00th=[    3], 80.00th=[    3], 90.00th=[    3], 95.00th=[    4],
+     | 99.00th=[  612], 99.50th=[  644], 99.90th=[  716], 99.95th=[  764],
+     | 99.99th=[ 1048]
+    bw (KB  /s): min=516192, max=790592, per=50.02%, avg=757711.60, stdev=23661.11
+    lat (usec) : 2=17.53%, 4=72.87%, 10=5.90%, 20=0.37%, 50=0.07%
+    lat (usec) : 100=0.12%, 250=0.01%, 500=0.47%, 750=2.59%, 1000=0.05%
+    lat (msec) : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.01%
+  cpu          : usr=4.30%, sys=69.40%, ctx=1298248, majf=0, minf=276840
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=22720262/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=355004MB, aggrb=1479.2MB/s, minb=1479.2MB/s, maxb=1479.2MB/s, mint=240001msec, maxt=240001msec
+
+CPU idleness:
+  system: 95.85%
+  unit work: mean=54.92us, stddev=1.81

@@ -1,0 +1,34 @@
+fio-beegfs-read-unbuffered-block_1024k-size_4G-threads_4: (g=0): rw=rw, bs=1M-1M/1M-1M/1M-1M, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 4 processes
+fio-beegfs-read-unbuffered-block_1024k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+fio-beegfs-read-unbuffered-block_1024k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+fio-beegfs-read-unbuffered-block_1024k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+fio-beegfs-read-unbuffered-block_1024k-size_4G-threads_4: Laying out IO file(s) (4 file(s) / 16384MB)
+
+fio-beegfs-read-unbuffered-block_1024k-size_4G-threads_4: (groupid=0, jobs=4): err= 0: pid=3703807: Thu Nov 22 01:01:59 2018
+  read : io=115188MB, bw=491457KB/s, iops=479, runt=240006msec
+    clat (usec): min=5379, max=29261, avg=8332.28, stdev=929.34
+     lat (usec): min=5380, max=29261, avg=8332.43, stdev=929.34
+    clat percentiles (usec):
+     |  1.00th=[ 7840],  5.00th=[ 7904], 10.00th=[ 7904], 20.00th=[ 7968],
+     | 30.00th=[ 8032], 40.00th=[ 8160], 50.00th=[ 8256], 60.00th=[ 8256],
+     | 70.00th=[ 8256], 80.00th=[ 8256], 90.00th=[ 8384], 95.00th=[ 9152],
+     | 99.00th=[13504], 99.50th=[15424], 99.90th=[17792], 99.95th=[18304],
+     | 99.99th=[19840]
+    bw (KB  /s): min=110648, max=126976, per=25.03%, avg=122990.07, stdev=3424.21
+    lat (msec) : 10=96.65%, 20=3.35%, 50=0.01%
+  cpu          : usr=0.04%, sys=8.25%, ctx=571605, majf=0, minf=2548
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=115188/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=115188MB, aggrb=491456KB/s, minb=491456KB/s, maxb=491456KB/s, mint=240006msec, maxt=240006msec
+
+CPU idleness:
+  system: 95.75%
+  unit work: mean=53.88us, stddev=2.89

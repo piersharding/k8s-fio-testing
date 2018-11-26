@@ -1,0 +1,34 @@
+fio-beegfs-read-unbuffered-block_1024k-size_1G-threads_4: (g=0): rw=rw, bs=1M-1M/1M-1M/1M-1M, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 4 processes
+fio-beegfs-read-unbuffered-block_1024k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-unbuffered-block_1024k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-unbuffered-block_1024k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-read-unbuffered-block_1024k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+
+fio-beegfs-read-unbuffered-block_1024k-size_1G-threads_4: (groupid=0, jobs=4): err= 0: pid=3561114: Wed Nov 21 16:25:40 2018
+  read : io=114610MB, bw=488988KB/s, iops=477, runt=240007msec
+    clat (msec): min=6, max=38, avg= 8.37, stdev= 1.05
+     lat (msec): min=6, max=38, avg= 8.37, stdev= 1.05
+    clat percentiles (usec):
+     |  1.00th=[ 7776],  5.00th=[ 7904], 10.00th=[ 7904], 20.00th=[ 7968],
+     | 30.00th=[ 8032], 40.00th=[ 8256], 50.00th=[ 8256], 60.00th=[ 8256],
+     | 70.00th=[ 8256], 80.00th=[ 8384], 90.00th=[ 8384], 95.00th=[ 9664],
+     | 99.00th=[14144], 99.50th=[16064], 99.90th=[18048], 99.95th=[18816],
+     | 99.99th=[22144]
+    bw (KB  /s): min=103619, max=127494, per=25.02%, avg=122362.74, stdev=3784.80
+    lat (msec) : 10=95.91%, 20=4.07%, 50=0.02%
+  cpu          : usr=0.04%, sys=8.16%, ctx=574250, majf=0, minf=2537
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=114610/w=0/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: io=114610MB, aggrb=488988KB/s, minb=488988KB/s, maxb=488988KB/s, mint=240007msec, maxt=240007msec
+
+CPU idleness:
+  system: 98.07%
+  unit work: mean=55.28us, stddev=2.81

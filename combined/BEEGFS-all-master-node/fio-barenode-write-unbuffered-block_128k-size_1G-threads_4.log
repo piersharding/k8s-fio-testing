@@ -1,0 +1,35 @@
+fio-beegfs-write-unbuffered-block_128k-size_1G-threads_4: (g=0): rw=rw, bs=128K-128K/128K-128K/128K-128K, ioengine=psync, iodepth=1
+...
+fio-2.2.10
+Starting 4 processes
+fio-beegfs-write-unbuffered-block_128k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-write-unbuffered-block_128k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-write-unbuffered-block_128k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+fio-beegfs-write-unbuffered-block_128k-size_1G-threads_4: Laying out IO file(s) (4 file(s) / 4096MB)
+
+fio-beegfs-write-unbuffered-block_128k-size_1G-threads_4: (groupid=0, jobs=4): err= 0: pid=3550347: Wed Nov 21 15:49:24 2018
+  write: io=89647MB, bw=382492KB/s, iops=2988, runt=240001msec
+    clat (usec): min=463, max=30323, avg=1335.10, stdev=496.85
+     lat (usec): min=465, max=30325, avg=1336.75, stdev=496.85
+    clat percentiles (usec):
+     |  1.00th=[  964],  5.00th=[  996], 10.00th=[ 1012], 20.00th=[ 1032],
+     | 30.00th=[ 1064], 40.00th=[ 1080], 50.00th=[ 1112], 60.00th=[ 1176],
+     | 70.00th=[ 1416], 80.00th=[ 1768], 90.00th=[ 1944], 95.00th=[ 2024],
+     | 99.00th=[ 2800], 99.50th=[ 3248], 99.90th=[ 7584], 99.95th=[ 8096],
+     | 99.99th=[ 8640]
+    bw (KB  /s): min=69120, max=103424, per=25.02%, avg=95706.11, stdev=6124.25
+    lat (usec) : 500=0.01%, 750=0.02%, 1000=5.57%
+    lat (msec) : 2=87.95%, 4=6.18%, 10=0.27%, 20=0.01%, 50=0.01%
+  cpu          : usr=0.36%, sys=4.80%, ctx=1254826, majf=0, minf=17287
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=717175/d=0, short=r=0/w=0/d=0, drop=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: io=89647MB, aggrb=382491KB/s, minb=382491KB/s, maxb=382491KB/s, mint=240001msec, maxt=240001msec
+
+CPU idleness:
+  system: 90.10%
+  unit work: mean=50.74us, stddev=4.26
